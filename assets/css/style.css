@@ -87,13 +87,13 @@ aside a {
 /* main */
 main {
     grid-area: main;
-    background-color: #9babb8;  
+    background-color: #9babb8; 
 }
 
 .products {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
     gap: 1.2rem;
 }
 
