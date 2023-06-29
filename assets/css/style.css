@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* text */
+h2 {
+    padding-bottom: 1rem;
+    font-weight:500;
+}
+
+.list-numer {
+    font-weight:500;
+}
+
+.list a{
+    font-weight: 300;
+    padding-left: 0.3rem;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.author {
+    color: #316898;
+    font-style: italic;
+}
+
+.price {
+    color: #6c757d;
+    padding: 0.5rem;
+}
+
+/* grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";    
+}
+
+/* header */
+nav {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: #001c30;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* aside */
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9babb8;
+    padding: 1.3rem;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-item {
+    display: flex;
+    align-content: flex-start;
+}
+
+/* main */
+main {
+    grid-area: main;
+    background-color: #9babb8;  
+}
+
+.products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10%;
+}
+
+.item img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+}
+
+.button {
+    background-color: #001c30;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 0px 0px 30px 40px;
+}
+
+/* footer */
+footer {
+    background-color: #001c30;
+    color: #fff;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
